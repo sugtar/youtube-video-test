@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<title>Embedded YouTube Video</title>
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/youtube_video_test.js"></script>
 	</head>
 	<body>
-		<div id="top">
-			INDEX.HTML
-		</div>
-		<iframe id="ytplayer" type="text/html" width="320" height="240"
-			src="http://www.youtube.com/embed/jpLgD_DHEy0?autoplay=1&origin=http://localhost"
-			frmaeborder="0" />
+			<div id="ytplayer"></div>
+			<div id="player_controll"><button id="play_button">play</button><button id="pause_button">pause</button></div>
+			<div>Current Time: <span id="current_time">N/A</span></div>
 	</body>
 </html>
